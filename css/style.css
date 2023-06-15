@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Righteous', cursive;
+    color: black;
+}
+
+
+img{
+    height: 100%;
+    width: 100%;
+}
+
+li{
+    list-style: none;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.navbar__logo{
+    height: 40px;
+    width: 80px;
+}
+
+
+.navbar{
+    padding: 2rem;
+    color: black;
+    background-color: lightgray;
+    
+}
+
+
+.iniciasesion{
+    background-color: skyblue;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+
+.registrarse{
+    background-color: skyblue;
+    border-radius: 5px;
+    border: 1px solid black;
+    
+}
+
+.iniciasesion:hover{
+    background-color: lightskyblue;
+}
+
+.registrarse:hover{
+    background-color: lightskyblue;
+}
+
+
+
+.micambio{   
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media (max-width:767px){
+    .navbar-brand{
+        display: none;
+    }
+}
+
+span{
+    color: deepskyblue;
+}
+
+#main{
+    display: flex;
+    margin: 0 auto;
+    
+}
+
+.main__imagen{
+    background-size: cover;
+    width: 50%;
+    height: auto;
+}
+
+.main__contenido{
+    width: 50%;
+    text-align: center;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    
+}
+
+@media (max-width:767px){
+    #main{
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .main__imagen{
+        width: 100%;
+    }
+    .main__contenido{
+        width: 100%;
+        height: auto;
+        font-size: 25px;
+        
+    }
+}
+
+.section-aprender{
+    background-color: white;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+
+
+.section-aprender__contenedor{
+    max-width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+
+
+.section-aprender__tema{
+    background-color: burlywood;
+    padding: 40px 25px;
+    margin: 20px 0;
+    border-radius: 10px;
+
+}
+
+.section-aprender__imagen{
+    height: 100px;
+    width: 150px;
+}
+
+
+.section-aprender__tema:hover{
+    transform: scale(1.1);
+    transition: all ease-in 0.5s;
+}
+
+@media (max-width:850px){
+    .section-aprender__contenedor{
+        flex-direction: column;
+        
+    }
+}
+
+.testimonios{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 40px 80px 40px;
+    background-color: lightblue ;
+}
+
+.carousel{
+    max-width: 800px;
+
+    
+}
+
+
+.carousel-item{
+    height: 100%;
+
+}
+
+
+.testimonios__container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonio__imagen{
+    height: 150px;
+    width: 200px;
+    margin: 20px;
+
+}
+
+.testimonio__texto{
+    max-width: 70%;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.testimonio__informacion{
+    text-align: center;
+
+}
+
+
+.formulario{
+    background-color: white;
+    padding: 40px 40px 80px 40px;
+    gap: 20px;
+}
+
+.subtitulos{
+    text-align: center;
+    font-weight: bold;
+}
+
+.formulario__seccion{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.formulario__inputs{
+    display: block;
+    
+}
+
+.input{
+    width: 100%;
+}
+
+
+@media (max-width:767px){
+    .formulario__seccion{
+        flex-direction: column;
+    }
+    iframe{
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+img{
+    height: 50px;
+}
+
+.contenedor__footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: lightblue;
+}
+
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width:767px){
+    .contenedor__footer{
+        flex-direction: column;
+        padding: 24px;  
+    }
+    .footer__links{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
