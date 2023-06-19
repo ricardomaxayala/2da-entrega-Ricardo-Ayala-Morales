@@ -28,8 +28,6 @@ a{
 }
 
 
-
-
 .navbar{
     background-color: lightgray;
     padding: 1rem;
@@ -215,7 +213,7 @@ span{
 }
 
 
-.formulario{
+.formulario__principal{
     background-color: white;
     padding: 40px 40px 80px 40px;
     gap: 20px;
@@ -226,14 +224,14 @@ span{
     font-weight: bold;
 }
 
-.formulario__seccion{
+.formulario__principal__seccion{
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
     justify-content: space-evenly;
 }
 
-.formulario__inputs{
+.formulario__principal__inputs{
     display: block;
     
 }
@@ -244,7 +242,7 @@ span{
 
 
 @media (max-width:767px){
-    .formulario__seccion{
+    .formulario__principal__seccion{
         flex-direction: column;
     }
     iframe{
@@ -285,3 +283,51 @@ img{
 
     }
 }
+
+
+.formulario__iniciarsesion__contenedor{
+    display: flex;
+    flex-direction: column ;
+    width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid black;
+    gap: 20px;
+    
+}
+
+.formulario__iniciarsesion__botones{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+
+
+.formulario__iniciarsesion__botones a{
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.button__facebook{
+    background-color: #3b5998;
+}
+
+.button__twitter{
+    background-color: #00acee;
+}
+
+.button__google{
+    background-color: #DB4437;
+}
+
+.formulario__iniciarsesion__contenedor form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+
+
