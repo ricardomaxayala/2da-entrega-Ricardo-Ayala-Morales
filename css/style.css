@@ -36,25 +36,15 @@ a{
 
 
 
-.iniciasesion{
+.estilo__iniciarsesion__registrarse{
     background-color: skyblue;
     border-radius: 5px;
     border: 1px solid black;
     
 }
 
-.registrarse{
-    background-color: skyblue;
-    border-radius: 5px;
-    border: 1px solid black;
-    
-}
 
-.iniciasesion:hover{
-    background-color: lightskyblue;
-}
-
-.registrarse:hover{
+.estilo__iniciarsesion__registrarse:hover{
     background-color: lightskyblue;
 }
 
@@ -285,7 +275,7 @@ img{
 }
 
 
-.formulario__iniciarsesion__contenedor{
+.iniciarsesion__contenedor{
     display: flex;
     flex-direction: column ;
     width: 500px;
@@ -296,7 +286,7 @@ img{
     
 }
 
-.formulario__iniciarsesion__botones{
+.iniciarsesion__botones{
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -304,7 +294,7 @@ img{
 }
 
 
-.formulario__iniciarsesion__botones a{
+.iniciarsesion__botones a{
     border: 1px solid black;
     text-align: center;
     padding: 5px 0;
@@ -322,12 +312,31 @@ img{
     background-color: #DB4437;
 }
 
-.formulario__iniciarsesion__contenedor form{
+.iniciarsesion__contenedor form{
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
+@media (max-width:576px){
+    .iniciarsesion__contenedor{
+        width: 350px;
+    }
+}
 
 
+.registrarse__contenedor{
+    display: flex;
+    width: 500px;
+    flex-direction: column;
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 20px;
+    gap: 20px;
+}
 
+.registrarse__contenedor form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
