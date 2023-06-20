@@ -7,10 +7,7 @@
 }
 
 
-img{
-    height: 100%;
-    width: 100%;
-}
+
 
 li{
     list-style: none;
@@ -237,13 +234,10 @@ span{
     }
     iframe{
         width: 300px;
-        margin: 0 auto;
+        margin: 0 auto;        
     }
 }
 
-img{
-    height: 50px;
-}
 
 .contenedor__footer{
     display: flex;
@@ -317,10 +311,19 @@ img{
     flex-direction: column;
     gap: 20px;
 }
+.iniciarsesion__contenedor form input{
+    padding: 0 0 0 10px;
+}
+
+.iniciarsesion__texto{
+    font-size: 12px;
+    text-align: center;
+    color: darkmagenta;
+}
 
 @media (max-width:576px){
     .iniciarsesion__contenedor{
-        width: 350px;
+        width: 90%;
     }
 }
 
@@ -339,4 +342,131 @@ img{
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.registrarse__contenedor form input{
+    padding: 0 0 0 10px;
+}
+
+.registrarse__texto{
+    text-align: center;
+    font-size: 10px;
+}
+
+@media (max-width:576px){
+    .registrarse__contenedor{
+        width: 90%;
+    }
+}
+
+.bootcamp_subtitulo{
+    text-align: center;
+    height: 100px;
+    padding: 25px 0;
+    background-color: purple;
+    color: white;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+
+
+.bootcamps__grid{
+    display: grid;
+    width: 80%;   
+    margin: 20px auto;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "primero segundo"
+    "tercero cuarto"
+    "quinto sexto";
+    gap: 20px;
+    text-align: center;
+}
+
+
+.bootcamp__uno{
+    grid-area:primero;
+    background-color: chocolate;
+    padding: 10px;
+ 
+}
+
+.bootcamp__informacion{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+
+.estilo__bootcamp__imagen{
+    transition: transform 0.5s ease;
+}
+
+.estilo__bootcamp__imagen:hover{
+    transform: scale(0.8);
+}
+
+.bootcamp__dos{
+    grid-area:segundo;
+    background-color: aquamarine;
+    padding: 10px;
+    
+}
+
+.bootcamp__tres{
+    grid-area:tercero;
+    background-color: turquoise;
+    padding: 10px;
+}
+
+.bootcamp__cuatro{
+    grid-area:cuarto;
+    background-color: mediumslateblue;
+    padding: 10px;
+}
+
+.bootcamp__cinco{
+    grid-area:quinto;
+    background-color: lightcoral;
+    padding: 10px;
+}
+
+.bootcamp__seis{
+    grid-area:sexto;
+    background-color: orange;
+    padding: 10px;
+}
+
+.bootcamp__aplicar{
+    background-color: gold;
+    border: 2px solid black;
+    
+    
+}
+
+.bootcamp__aplicar:hover{
+    background-color: yellowgreen;
+    
+}
+
+
+@media (max-width:900px){
+    .bootcamps__grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6,1fr);
+        grid-template-areas:
+        "primero"
+        "segundo"
+        "tercero"
+        "cuarto"
+        "quinto"
+        "sexto";
+    }
 }
