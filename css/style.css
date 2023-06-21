@@ -517,3 +517,11 @@ img{
 }
 
 
+#nosotros{
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.nosotros__contenido h2{
+    font-family: 'Times New Roman', Times, serif;
+}
